@@ -8,12 +8,6 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task2.V28
             InitializeComponent();
         }
         DataService ds = new DataService();
-        private void buttonDone_VVV_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int startStep = Convert.ToInt32(textBoxStartStep_VVV.Text);
-                int stopStep = Convert.ToInt32(textBoxStopStep_VVV.Text);
 
                 int len = ds.GetMassFunction(startStep, stopStep).Length;
 
