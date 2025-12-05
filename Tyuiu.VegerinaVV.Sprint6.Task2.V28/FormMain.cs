@@ -9,6 +9,13 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task2.V28
         }
         DataService ds = new DataService();
 
+        private void buttonDone_VVV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int startStep = Convert.ToInt32(textBoxStartStep_VVV.Text);
+                int stopStep = Convert.ToInt32(textBoxStopStep_VVV.Text);
+
                 int len = ds.GetMassFunction(startStep, stopStep).Length;
 
                 double[] valueArray;
@@ -34,6 +41,7 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task2.V28
             {
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void buttonHelp_VVV_Click(object sender, EventArgs e)
@@ -41,9 +49,14 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task2.V28
             MessageBox.Show("Таск 2 выполнила студентка группы ИИПб-25-1 Вегерина Виктория Вячеславовна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void dataGridViewFunction_VVV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void chartFunction_VVV_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonDone_VVV_MouseEnter(object sender, EventArgs e)
@@ -59,11 +72,6 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task2.V28
         private void buttonDone_VVV_MouseDown(object sender, MouseEventArgs e)
         {
             buttonDone_VVV.BackColor = Color.Blue;
-        }
-
-        private void dataGridViewFunction_VVV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
