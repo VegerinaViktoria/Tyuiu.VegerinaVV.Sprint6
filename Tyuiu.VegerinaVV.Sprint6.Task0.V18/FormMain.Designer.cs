@@ -60,6 +60,7 @@
             textBoxCondition_VVV.Location = new Point(18, 35);
             textBoxCondition_VVV.Multiline = true;
             textBoxCondition_VVV.Name = "textBoxCondition_VVV";
+            textBoxCondition_VVV.ReadOnly = true;
             textBoxCondition_VVV.Size = new Size(334, 174);
             textBoxCondition_VVV.TabIndex = 0;
             textBoxCondition_VVV.Text = "Вычислить значение выражения по формуле";
@@ -89,6 +90,7 @@
             labelVarX_VVV.Location = new Point(61, 28);
             labelVarX_VVV.Multiline = true;
             labelVarX_VVV.Name = "labelVarX_VVV";
+            labelVarX_VVV.ReadOnly = true;
             labelVarX_VVV.Size = new Size(149, 31);
             labelVarX_VVV.TabIndex = 0;
             labelVarX_VVV.Text = "Переменная X:";
@@ -109,6 +111,7 @@
             textBoxResult_VVV.Location = new Point(76, 81);
             textBoxResult_VVV.Multiline = true;
             textBoxResult_VVV.Name = "textBoxResult_VVV";
+            textBoxResult_VVV.ReadOnly = true;
             textBoxResult_VVV.Size = new Size(131, 46);
             textBoxResult_VVV.TabIndex = 1;
             // 
@@ -117,6 +120,7 @@
             labelResult_VVV.Location = new Point(73, 30);
             labelResult_VVV.Multiline = true;
             labelResult_VVV.Name = "labelResult_VVV";
+            labelResult_VVV.ReadOnly = true;
             labelResult_VVV.Size = new Size(135, 30);
             labelResult_VVV.TabIndex = 0;
             labelResult_VVV.Text = "Результат:";
@@ -162,6 +166,7 @@
             Controls.Add(groupBoxOutput_VVV);
             Controls.Add(groupBoxInput_VVV);
             Controls.Add(groupBoxCondition_VVV);
+            MaximizeBox = false;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 0 | Вариант 18 | Вегерина В.В.";
             groupBoxCondition_VVV.ResumeLayout(false);
