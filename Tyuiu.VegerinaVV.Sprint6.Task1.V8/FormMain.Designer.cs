@@ -62,6 +62,7 @@
             textBoxTask_VVV.Location = new Point(6, 26);
             textBoxTask_VVV.Multiline = true;
             textBoxTask_VVV.Name = "textBoxTask_VVV";
+            textBoxTask_VVV.ReadOnly = true;
             textBoxTask_VVV.Size = new Size(490, 272);
             textBoxTask_VVV.TabIndex = 0;
             textBoxTask_VVV.Text = "Протабулировать функцию cos(x)/(x-0,4)+sin(x)*8*x+2 на заданном диапазоне. Результат вывести в виде таблицы. ";
@@ -94,6 +95,7 @@
             textBoxResult_VVV.Location = new Point(11, 52);
             textBoxResult_VVV.Multiline = true;
             textBoxResult_VVV.Name = "textBoxResult_VVV";
+            textBoxResult_VVV.ReadOnly = true;
             textBoxResult_VVV.ScrollBars = ScrollBars.Vertical;
             textBoxResult_VVV.Size = new Size(236, 343);
             textBoxResult_VVV.TabIndex = 0;
@@ -131,6 +133,7 @@
             labelStopStep_VVV.BorderStyle = BorderStyle.None;
             labelStopStep_VVV.Location = new Point(145, 26);
             labelStopStep_VVV.Name = "labelStopStep_VVV";
+            labelStopStep_VVV.ReadOnly = true;
             labelStopStep_VVV.Size = new Size(125, 20);
             labelStopStep_VVV.TabIndex = 1;
             labelStopStep_VVV.Text = "Конец шага:";
@@ -141,6 +144,7 @@
             labelStartStep_VVV.BorderStyle = BorderStyle.None;
             labelStartStep_VVV.Location = new Point(13, 26);
             labelStartStep_VVV.Name = "labelStartStep_VVV";
+            labelStartStep_VVV.ReadOnly = true;
             labelStartStep_VVV.Size = new Size(119, 20);
             labelStartStep_VVV.TabIndex = 0;
             labelStartStep_VVV.Text = "Старт шага:";
@@ -177,6 +181,7 @@
             Controls.Add(groupBoxInput_VVV);
             Controls.Add(groupBoxOutput_VVV);
             Controls.Add(groupBoxTask_VVV);
+            MaximizeBox = false;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 1 | Вариант 8 | Вегерина В. В. ";
             groupBoxTask_VVV.ResumeLayout(false);
