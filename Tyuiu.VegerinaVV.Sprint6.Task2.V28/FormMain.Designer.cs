@@ -69,6 +69,7 @@
             textBoxTask_VVV.Location = new Point(13, 34);
             textBoxTask_VVV.Multiline = true;
             textBoxTask_VVV.Name = "textBoxTask_VVV";
+            textBoxTask_VVV.ReadOnly = true;
             textBoxTask_VVV.Size = new Size(416, 238);
             textBoxTask_VVV.TabIndex = 0;
             textBoxTask_VVV.Text = "Протабулировать функцию (sin(x)-2x)/(3x-1)+sin(x)-3x+2 на заданном диапазоне. Результат вывести в DataGridView и построить график функции.  ";
@@ -105,6 +106,7 @@
             labelStopStep_VVV.BackColor = SystemColors.Control;
             labelStopStep_VVV.Location = new Point(122, 28);
             labelStopStep_VVV.Name = "labelStopStep_VVV";
+            labelStopStep_VVV.ReadOnly = true;
             labelStopStep_VVV.Size = new Size(102, 27);
             labelStopStep_VVV.TabIndex = 1;
             labelStopStep_VVV.Text = "Конец шага:";
@@ -114,6 +116,7 @@
             labelStartStep_VVV.BackColor = SystemColors.Control;
             labelStartStep_VVV.Location = new Point(16, 28);
             labelStartStep_VVV.Name = "labelStartStep_VVV";
+            labelStartStep_VVV.ReadOnly = true;
             labelStartStep_VVV.Size = new Size(100, 27);
             labelStartStep_VVV.TabIndex = 0;
             labelStartStep_VVV.Text = "Старт шага:";
@@ -158,9 +161,10 @@
             // textBoxResult_VVV
             // 
             textBoxResult_VVV.BackColor = SystemColors.Control;
-            textBoxResult_VVV.Location = new Point(13, 34);
+            textBoxResult_VVV.BorderStyle = BorderStyle.None;
+            textBoxResult_VVV.Location = new Point(6, 27);
             textBoxResult_VVV.Name = "textBoxResult_VVV";
-            textBoxResult_VVV.Size = new Size(91, 27);
+            textBoxResult_VVV.Size = new Size(101, 20);
             textBoxResult_VVV.TabIndex = 2;
             textBoxResult_VVV.Text = "Результат:";
             // 
@@ -170,7 +174,7 @@
             chartFunction_VVV.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chartFunction_VVV.Legends.Add(legend1);
-            chartFunction_VVV.Location = new Point(110, 60);
+            chartFunction_VVV.Location = new Point(120, 60);
             chartFunction_VVV.Name = "chartFunction_VVV";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -178,7 +182,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartFunction_VVV.Series.Add(series1);
-            chartFunction_VVV.Size = new Size(445, 307);
+            chartFunction_VVV.Size = new Size(441, 307);
             chartFunction_VVV.TabIndex = 1;
             chartFunction_VVV.Text = "chart_vvv";
             chartFunction_VVV.Click += chartFunction_VVV_Click;
@@ -187,27 +191,30 @@
             // 
             dataGridViewFunction_VVV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewFunction_VVV.Columns.AddRange(new DataGridViewColumn[] { X, Y });
-            dataGridViewFunction_VVV.Location = new Point(13, 60);
+            dataGridViewFunction_VVV.Location = new Point(0, 60);
             dataGridViewFunction_VVV.Name = "dataGridViewFunction_VVV";
+            dataGridViewFunction_VVV.ReadOnly = true;
             dataGridViewFunction_VVV.RowHeadersVisible = false;
             dataGridViewFunction_VVV.RowHeadersWidth = 51;
-            dataGridViewFunction_VVV.Size = new Size(97, 308);
+            dataGridViewFunction_VVV.Size = new Size(119, 308);
             dataGridViewFunction_VVV.TabIndex = 0;
             dataGridViewFunction_VVV.CellContentClick += dataGridViewFunction_VVV_CellContentClick;
             // 
             // X
             // 
             X.HeaderText = "X";
-            X.MinimumWidth = 6;
+            X.MinimumWidth = 7;
             X.Name = "X";
-            X.Width = 50;
+            X.ReadOnly = true;
+            X.Width = 60;
             // 
             // Y
             // 
             Y.HeaderText = "F(X)";
-            Y.MinimumWidth = 6;
+            Y.MinimumWidth = 7;
             Y.Name = "Y";
-            Y.Width = 50;
+            Y.ReadOnly = true;
+            Y.Width = 60;
             // 
             // FormMain
             // 
@@ -219,6 +226,7 @@
             Controls.Add(buttonHelp_VVV);
             Controls.Add(groupBoxInput_VVV);
             Controls.Add(groupBoxTask_VVV);
+            MaximizeBox = false;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 2 | Вариант 28 | Вегерина В. В.";
             groupBoxTask_VVV.ResumeLayout(false);
