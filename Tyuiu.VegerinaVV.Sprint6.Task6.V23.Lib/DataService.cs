@@ -19,7 +19,11 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task6.V23.Lib
                     {
                         if (word.Contains("s"))
                         {
-                            resStr = resStr + " " + word;
+                            if (resStr.Length > 0)
+                            {
+                                resStr += " ";
+                            }
+                            resStr += word;
                         }
                     }
                 }
