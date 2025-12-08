@@ -9,7 +9,7 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task5.V9
         }
         DataService ds = new DataService();
 
-        string path = @"C:\DataSprint5\InPutDataFileTask5V9.txt";
+        string path = @"C:\DataSprint6\InPutDataFileTask5V9.txt";
         private void buttonDone_VVV_Click(object sender, EventArgs e)
         {
             dataGridViewResult_VVV.ColumnCount = 2;
