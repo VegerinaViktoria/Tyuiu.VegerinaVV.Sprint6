@@ -61,7 +61,7 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task7.V24
         private void buttonSaveFile_VVV_Click(object sender, EventArgs e)
         {
             saveFileDialogMatrix_VVV.FileName = "OutPutFileTask7V24.csv";
-            saveFileDialogMatrix_VVV.InitialDirectory = Directory.GetCurrentDirectory();
+            saveFileDialogMatrix_VVV.InitialDirectory = Path.Combine(Path.GetTempPath());
             saveFileDialogMatrix_VVV.ShowDialog();
 
             string path = saveFileDialogMatrix_VVV.FileName;
