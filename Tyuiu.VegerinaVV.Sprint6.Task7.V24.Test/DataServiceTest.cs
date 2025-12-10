@@ -8,7 +8,7 @@ namespace Tyuiu.VegerinaVV.Sprint6.Task7.V24.Test
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = @"C:\DataSprint6\OutPutFileTask7V24.csv";
+            string path = @"C:\DataSprint6\InPutDataFileTask7V24.csv";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
