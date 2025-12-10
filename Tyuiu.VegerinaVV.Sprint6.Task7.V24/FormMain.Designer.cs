@@ -240,6 +240,7 @@
             Controls.Add(panelButton_VVV);
             Name = "FormMain";
             Text = "Спринт 6 | Таск 7 | Вариант 24 | Вегерина В. В.";
+            WindowState = FormWindowState.Maximized;
             Load += FormMain_Load;
             panelButton_VVV.ResumeLayout(false);
             panelTask_VVV.ResumeLayout(false);
